@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
         </h1>
         <p className="text-slate-600">
           You can contact Abubakar (Irshad) Baiwa meanwhile through the
-          following channels
+          following channels;
         </p>
         <div className="my-1 flex items-baseline justify-center">
           <Link to="mailto:irshaadbaiwa@gmail.com" className="m-2">
