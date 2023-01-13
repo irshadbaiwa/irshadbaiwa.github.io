@@ -35,35 +35,23 @@ const HeroSection: React.FC = () => {
         </h1>
         <p className="text-slate-600">
           You can contact Abubakar (Irshad) Baiwa meanwhile through the
-          following channels;
+          following channels
         </p>
         <div className="my-1 flex items-baseline justify-center">
           <Link to="mailto:irshaadbaiwa@gmail.com" className="m-2">
-            <IoMail
-              className="fill-slate-500 visited:fill-slate-500"
-              size={24}
-            />
+            <IoMail className="fill-slate-500" size={24} />
           </Link>
           <Link
             to="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
             className="m-2"
           >
-            <IoLogoLinkedin
-              className="fill-slate-500 visited:fill-slate-500"
-              size={24}
-            />
+            <IoLogoLinkedin className="fill-slate-500" size={24} />
           </Link>
           <Link to="https://github.com/irshadbaiwa" className="m-2">
-            <IoLogoGithub
-              className="fill-slate-500 visited:fill-slate-500"
-              size={24}
-            />
+            <IoLogoGithub className="fill-slate-500" size={24} />
           </Link>
-          <Link to="https://twitter.com/codewith_irshad" className="m-2">
-            <IoLogoTwitter
-              className="fill-slate-500 visited:fill-slate-500"
-              size={24}
-            />
+          <Link to="https://github.com/irshadbaiwa" className="m-2">
+            <IoLogoTwitter className="fill-slate-500" size={24} />
           </Link>
         </div>
       </div>
