@@ -3,7 +3,7 @@ import React from 'react'
 const BlobGradient: React.FC = () => {
   return (
     <div
-      className="w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-xl rotate-45"
+      className="w-60 h-60 md:w-80 md:h-80 rounded-xl rotate-45"
       style={{
         background: `linear-gradient(26.62deg, hsl(13deg 93% 66% / 89%) 20.64%, hsl(13deg 93% 66% / 15%) 49.82%),
       linear-gradient(56.79deg, hsl(281deg 74% 73%) 33.79%, hsl(281deg 74% 73% / 0%) 72.67%),

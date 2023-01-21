@@ -8,7 +8,7 @@ import {
   IoLogoTwitter,
 } from 'react-icons/io5'
 
-import BlobGradient from '../../../components/Blob'
+import BlobGradient from '../../components/Blob'
 
 const HeroSection: React.FC = () => {
   return (
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
           <StaticImage
             src="../../../images/avatar.jpg"
             alt="My avatar"
-            className="h-56 w-56 rounded-full z-10"
+            className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10"
           />
         </div>
       </div>

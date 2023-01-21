@@ -1,3 +1,15 @@
-import HomePage from './home'
+import * as React from 'react'
+import type { HeadFC } from 'gatsby'
+import HeroSection from '../sections/home/Hero'
+
+const HomePage: React.FC = () => {
+  return (
+    <main>
+      <HeroSection />
+    </main>
+  )
+}
 
 export default HomePage
+
+export const Head: HeadFC = () => <title>Abubakar Baiwa</title>
