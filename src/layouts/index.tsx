@@ -1,10 +1,14 @@
 import React from 'react'
 
-const Layout: React.FC = (props: any) => {
+interface Props {
+  children: React.ReactNode
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div>
       <title>Abubakar Baiwa</title>
-      {props.children}
+      {children}
     </div>
   )
 }
