@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_portfolio_site=self.webpackChunkmy_portfolio_site||[]).push([[258],{8071:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var u=n(7294),l=n(643);t.default=function(){return u.createElement("main",null,u.createElement(l.default,null))};var r=function(){return u.createElement("title",null,"Abubakar Baiwa")}}}]);
-//# sourceMappingURL=component---src-pages-home-index-tsx-ac5c0bf183cbb605b865.js.map

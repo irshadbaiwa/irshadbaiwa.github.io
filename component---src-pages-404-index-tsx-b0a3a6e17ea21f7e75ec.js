@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_portfolio_site=self.webpackChunkmy_portfolio_site||[]).push([[911],{6625:function(e,t,n){n.r(t),n.d(t,{Head:function(){return r}});var o=n(7294);t.default=function(){return o.createElement("main",null,o.createElement("h1",{className:"font-bold text-center"},"Page not found"))};var r=function(){return o.createElement("title",null,"Not found")}}}]);
-//# sourceMappingURL=component---src-pages-404-index-tsx-b0a3a6e17ea21f7e75ec.js.map
