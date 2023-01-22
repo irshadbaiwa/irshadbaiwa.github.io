@@ -28,7 +28,7 @@ const HeroSection: React.FC<Props> = () => {
         {/* Avatar */}
         <div className="lg:col-span-2 lg:order-2 relative m-4 h-80 lg:h-auto grid place-items-center">
           <StaticImage
-            src="../../../images/avatar.jpg"
+            src="../../images/avatar1.jpg"
             alt="My avatar"
             className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10"
           />
@@ -55,27 +55,27 @@ const HeroSection: React.FC<Props> = () => {
               <div className="my-4 flex flex-wrap items-center justify-start">
                 <Link
                   to="mailto:irshaadbaiwa@gmail.com"
-                  className="bg-primary px-4 rounded-tl-xl rounded-br-xl m-2 h-12 grid place-items-center"
+                  className="bg-primary px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <span className="text-lg text-white font-bold">
+                  <span className="text-sm lg:text-base text-white font-bold">
                     Get in touch
                   </span>
                 </Link>
                 <Link
                   to="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
-                  className="bg-light px-4 rounded-tl-xl rounded-br-xl m-2 h-12 grid place-items-center"
+                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <IoLogoLinkedin className="fill-primary" size={28} />
                 </Link>
                 <Link
                   to="https://github.com/irshadbaiwa"
-                  className="bg-light px-4 rounded-tl-xl rounded-br-xl m-2 h-12 grid place-items-center"
+                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <IoLogoGithub className="fill-primary" size={28} />
                 </Link>
                 <Link
                   to="https://github.com/irshadbaiwa"
-                  className="bg-light px-4 rounded-tl-xl rounded-br-xl m-2 h-12 grid place-items-center"
+                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <IoLogoTwitter className="fill-primary" size={28} />
                 </Link>
