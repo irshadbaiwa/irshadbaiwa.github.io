@@ -1,12 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import {
-  IoMail,
-  IoLogoLinkedin,
-  IoLogoGithub,
-  IoLogoTwitter,
-} from 'react-icons/io5'
+import { IoLogoLinkedin, IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
 
 import BlobGradient from '../../components/Blob'
 import Text from '../../components/Text'
@@ -24,7 +19,7 @@ const HeroSection: React.FC<Props> = () => {
       </div>
 
       {/* Hero Content */}
-      <div className="lg:h-full lg:w-full lg:grid lg:grid-cols-5 lg:absolute z-10">
+      <div className="lg:h-full lg:w-full lg:grid lg:grid-cols-5 relative lg:absolute z-10">
         {/* Avatar */}
         <div className="lg:col-span-2 lg:order-2 relative m-4 h-80 lg:h-auto grid place-items-center">
           <StaticImage
@@ -45,8 +40,7 @@ const HeroSection: React.FC<Props> = () => {
               <Text>
                 <p>
                   Howdy! This site is currently undergoing some updates, You can
-                  contact Abubakar (Irshad) Baiwa meanwhile through the links
-                  below;
+                  contact me meanwhile through the links below;
                 </p>
               </Text>
             </div>
@@ -74,7 +68,7 @@ const HeroSection: React.FC<Props> = () => {
                   <IoLogoGithub className="fill-primary" size={28} />
                 </Link>
                 <Link
-                  to="https://github.com/irshadbaiwa"
+                  to="https://twitter.com/codewith_irshad"
                   className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <IoLogoTwitter className="fill-primary" size={28} />
