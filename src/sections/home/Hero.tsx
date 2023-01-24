@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { IoLogoLinkedin, IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
 
 import BlobGradient from '../../components/Blob'
+import IconGradient from '../../components/IconGradient'
 import Text from '../../components/Text'
 import HeaderText from '../../components/HeaderText'
 
@@ -47,32 +47,36 @@ const HeroSection: React.FC<Props> = () => {
             {/* Contact Links */}
             <div className="flex justify-center">
               <div className="my-4 flex flex-wrap items-center justify-start">
-                <Link
-                  to="mailto:irshaadbaiwa@gmail.com"
-                  className="bg-primary px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
+                <a
+                  target="_blank"
+                  href="mailto:irshaadbaiwa@gmail.com"
+                  className="bg-gradient-to-b from-primary1 to-primary2 px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <span className="text-sm lg:text-base text-white font-bold">
                     Get in touch
                   </span>
-                </Link>
-                <Link
-                  to="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
                   className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IoLogoLinkedin className="fill-primary" size={28} />
-                </Link>
-                <Link
-                  to="https://github.com/irshadbaiwa"
+                  <IconGradient Icon={IoLogoLinkedin} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://github.com/irshadbaiwa"
                   className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IoLogoGithub className="fill-primary" size={28} />
-                </Link>
-                <Link
-                  to="https://twitter.com/codewith_irshad"
+                  <IconGradient Icon={IoLogoGithub} />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/codewith_irshad"
                   className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IoLogoTwitter className="fill-primary" size={28} />
-                </Link>
+                  <IconGradient Icon={IoLogoTwitter} />
+                </a>
               </div>
             </div>
           </div>
