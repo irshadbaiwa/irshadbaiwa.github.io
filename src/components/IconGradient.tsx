@@ -12,7 +12,7 @@ const IconGradient: React.FC<Props> = ({ Icon }) => (
     <defs>
       <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
         <stop offset="0%" stop-color="#A663CC" />
-        <stop offset="100%" stop-color="#9163CB" />
+        <stop offset="100%" stop-color="#5d2f6a" />
       </linearGradient>
     </defs>
     {Icon && <Icon fill="url(#gradient)" size={24} />}

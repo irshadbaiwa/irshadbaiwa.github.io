@@ -34,8 +34,13 @@ const HeroSection: React.FC<Props> = () => {
           <div className="p-4 lg:px-10 text-center">
             {/* Intro */}
             <div className="mb-2">
-              <HeaderText>
-                <h1 className="my-2">Barka da zuwa</h1>
+              <HeaderText variant="h1">
+                <h1
+                  className="my-2 font-medium"
+                  style={{ fontFamily: 'Niconne' }}
+                >
+                  Barká Da Zuwá
+                </h1>
               </HeaderText>
               <Text>
                 <p>
