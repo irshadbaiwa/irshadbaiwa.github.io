@@ -36,8 +36,8 @@ const HeroSection: React.FC<Props> = () => {
             <div className="mb-2">
               <HeaderText variant="h1">
                 <h1
-                  className="my-2 font-medium"
-                  style={{ fontFamily: 'Niconne' }}
+                  className="my-2 font-semibold"
+                  style={{ fontFamily: 'Allura' }}
                 >
                   Barká Da Zuwá
                 </h1>
