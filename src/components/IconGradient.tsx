@@ -10,9 +10,9 @@ const IconGradient: React.FC<Props> = ({ Icon }) => (
     xmlns="http://www.w3.org/2000/svg"
   >
     <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" stop-color="#A663CC" />
-        <stop offset="100%" stop-color="#5d2f6a" />
+      <linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#A95FA7" />
+        <stop offset="100%" stop-color="#7461B4" />
       </linearGradient>
     </defs>
     {Icon && <Icon fill="url(#gradient)" size={24} />}

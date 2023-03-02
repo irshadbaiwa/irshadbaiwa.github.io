@@ -55,7 +55,7 @@ const HeroSection: React.FC<Props> = () => {
                 <a
                   target="_blank"
                   href="mailto:irshaadbaiwa@gmail.com"
-                  className="bg-gradient-to-b from-primary1 to-primary2 px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
+                  className="bg-gradient-to-bl from-primary1 to-primary2 px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
                   <span className="text-sm lg:text-base text-white font-bold">
                     Get in touch
