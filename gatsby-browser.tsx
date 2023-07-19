@@ -1,3 +1,3 @@
 import '@fontsource/inter'
-import '@fontsource/allura'
+import '@fontsource/merriweather'
 import './src/styles/global.css'

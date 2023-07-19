@@ -20,6 +20,7 @@ const HeaderText: React.FC<Props> = ({ children, variant }) => {
       className={
         (TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1) + ' font-bold text-zinc-900'
       }
+      style={{ fontFamily: 'Merriweather' }}
     >
       {children}
     </div>

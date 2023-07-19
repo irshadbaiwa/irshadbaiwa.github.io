@@ -1,6 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import type { HeadFC } from 'gatsby'
-import HeroSection from '../sections/home/Hero'
+import SEO from '../components/wrappers/SEO'
+import HeroSection from '../components/sections/home/Hero'
 
 const HomePage: React.FC = () => {
   return (
@@ -12,4 +13,6 @@ const HomePage: React.FC = () => {
 
 export default HomePage
 
-export const Head: HeadFC = () => <title>Abubakar Baiwa</title>
+export const Head: HeadFC = () => {
+  return <SEO />
+}

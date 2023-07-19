@@ -2,10 +2,11 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { IoLogoLinkedin, IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
 
-import BlobGradient from '../../components/Blob'
-import IconGradient from '../../components/IconGradient'
-import Text from '../../components/Text'
-import HeaderText from '../../components/HeaderText'
+import BlobGradient from '../../gradients/Blob'
+import Text from '../../typography/Text'
+import HeaderText from '../../typography/HeaderText'
+import ButtonPrimary from '../../buttons/ButtonPrimary'
+import ButtonLight from '../../buttons/ButtonLight'
 
 interface Props {}
 const HeroSection: React.FC<Props> = () => {
@@ -34,53 +35,53 @@ const HeroSection: React.FC<Props> = () => {
           <div className="p-4 lg:px-10 text-center">
             {/* Intro */}
             <div className="mb-2">
-              <HeaderText variant="h1">
-                <h1
-                  className="my-2 font-semibold"
-                  style={{ fontFamily: 'Allura' }}
-                >
-                  Barká Da Zuwá
-                </h1>
-              </HeaderText>
-              <Text>
-                <p>
-                  Howdy! This site is currently undergoing some updates, You can
-                  contact me meanwhile through the links below;
-                </p>
-              </Text>
+              <div className="mb-4">
+                <HeaderText variant="h1">
+                  <h1 className="my-2 font-semibold">Barka Da Zuwa</h1>
+                </HeaderText>
+              </div>
+              <div className="max-w-xl flex flex-col gap-1 items-center justify-center">
+                <Text>Hey there! 👋</Text>
+                <Text> My name is Abubakar Baiwa.</Text>
+                <Text>
+                  I am a passionate frontend developer, accomplished in
+                  designing, building and maintaining performant web and mobile
+                  apps.
+                </Text>
+              </div>
             </div>
             {/* Contact Links */}
             <div className="flex justify-center">
-              <div className="my-4 flex flex-wrap items-center justify-start">
-                <a
-                  target="_blank"
-                  href="mailto:irshaadbaiwa@gmail.com"
-                  className="bg-gradient-to-bl from-primary1 to-primary2 px-4 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
-                >
-                  <span className="text-sm lg:text-base text-white font-bold">
-                    Get in touch
-                  </span>
+              <div className="my-4 gap-3 flex flex-wrap items-center justify-start">
+                <a target="_blank" href="mailto:irshaadbaiwa@gmail.com">
+                  <ButtonPrimary>Get in touch</ButtonPrimary>
                 </a>
                 <a
                   target="_blank"
+                  className="text-primary1"
                   href="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
-                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IconGradient Icon={IoLogoLinkedin} />
+                  <ButtonLight>
+                    <IoLogoLinkedin size={28} />
+                  </ButtonLight>
                 </a>
                 <a
                   target="_blank"
+                  className="text-primary1"
                   href="https://github.com/irshadbaiwa"
-                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IconGradient Icon={IoLogoGithub} />
+                  <ButtonLight>
+                    <IoLogoGithub size={28} />
+                  </ButtonLight>
                 </a>
                 <a
                   target="_blank"
+                  className="text-primary1"
                   href="https://twitter.com/codewith_irshad"
-                  className="bg-light px-2 rounded-tl-xl rounded-br-xl m-2 h-10 grid place-items-center"
                 >
-                  <IconGradient Icon={IoLogoTwitter} />
+                  <ButtonLight>
+                    <IoLogoTwitter size={28} />
+                  </ButtonLight>
                 </a>
               </div>
             </div>

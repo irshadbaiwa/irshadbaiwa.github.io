@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary1: '#A95FA7', // purple (light)
-        primary2: '#7461B4', // purple (dark)
+        primary1: '#7461B4', // purple (dark)
+        primary2: '#A95FA7', // purple (light)
         light: 'rgba(220,180,255,0.12)',
       },
     },

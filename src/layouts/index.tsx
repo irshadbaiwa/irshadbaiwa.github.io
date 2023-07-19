@@ -5,12 +5,7 @@ interface Props {
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
-  return (
-    <div>
-      <title>Abubakar Baiwa</title>
-      {children}
-    </div>
-  )
+  return <>{children}</>
 }
 
 export default Layout
