@@ -19,14 +19,14 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: './src/images/icon.svg',
+        icon: 'src/images/icon.svg',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: 'src/images/',
+        path: './src/images/',
       },
       __key: 'images',
     },
