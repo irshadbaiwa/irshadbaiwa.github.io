@@ -17,7 +17,7 @@ const SEO: React.FC<Props> = ({ children }) => {
       <meta name="author" content="Abubakar Baiwa" />
       <meta name="language" content="english" />
       <meta property="og:site_name" content="Abubakar Baiwa" />
-      <meta property="og:title" content="Abubakar Baiwa's portfolio" />
+      <meta property="og:title" content="Abubakar Baiwa" />
       <meta
         property="og:description"
         content="Passionate frontend developer, accomplished in designing, building and maintaining performant web and mobile apps. High skilled in HTML, CSS, Javascript, Python and SQL alongside modern frameworks and libraries like React, React-Native, Vue and Django."
