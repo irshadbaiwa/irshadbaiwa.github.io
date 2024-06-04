@@ -26,32 +26,30 @@ const HeroSection: React.FC<Props> = () => {
           <StaticImage
             src="../../../images/avatar1.jpg"
             alt="My avatar"
-            className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10"
+            className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10 border-2 border-primary2/20"
           />
         </div>
 
         {/* Welcome */}
         <div className="lg:col-span-3 lg:order-1 bg-gradient-to-b lg:bg-gradient-to-l from-transparent to-white grid place-items-center">
-          <div className="p-4 lg:px-10 text-center">
+          <div className="py-4 screen-gutter text-center lg:text-left">
             {/* Intro */}
             <div className="mb-2">
               <div className="mb-4">
                 <HeaderText variant="h1">
-                  <h1 className="my-2 font-semibold">Barka Da Zuwa</h1>
+                  <h1 className="my-2">Front-End Developer</h1>
                 </HeaderText>
               </div>
-              <div className="max-w-xl flex flex-col gap-1 items-center justify-center">
-                <Text>Hey there! 👋</Text>
-                <Text> My name is Abubakar Baiwa.</Text>
+              <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
                 <Text>
-                  I am a passionate frontend developer, accomplished in
-                  designing, building and maintaining performant web and mobile
-                  apps.
+                  Hi, I am Abubakar Baiwa. A passionate frontend developer,
+                  accomplished in designing, building and maintaining performant
+                  web and mobile apps.
                 </Text>
               </div>
             </div>
             {/* Contact Links */}
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:justify-start">
               <div className="my-4 gap-3 flex flex-wrap items-center justify-start">
                 <a target="_blank" href="mailto:irshaadbaiwa@gmail.com">
                   <ButtonPrimary>Get in touch</ButtonPrimary>
