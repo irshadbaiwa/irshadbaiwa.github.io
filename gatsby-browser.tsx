@@ -1,3 +1,2 @@
-import '@fontsource/inter'
-import '@fontsource/merriweather'
+import '@fontsource-variable/inter'
 import './src/styles/global.css'

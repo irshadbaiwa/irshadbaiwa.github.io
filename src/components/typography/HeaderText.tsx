@@ -19,12 +19,8 @@ const HeaderText: React.FC<Props> = ({ children, variant }) => {
     <div
       className={
         (TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1) +
-        ' font-extrabold text-gray-800 tracking-tight'
+        ' font-bold text-gray-800 tracking-tight'
       }
-      style={{
-        fontFamily: `'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-      Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif`,
-      }}
     >
       {children}
     </div>
