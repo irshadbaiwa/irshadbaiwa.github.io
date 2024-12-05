@@ -91,7 +91,7 @@ const HeroSection: React.FC<Props> = () => {
                 <a
                   target="_blank"
                   className="text-primary1"
-                  href="https://twitter.com/irshad_baiwa"
+                  href="https://x.com/irshad_baiwa"
                 >
                   <ButtonLight>
                     <IoLogoTwitter size={28} />
