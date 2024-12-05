@@ -12,7 +12,11 @@ const SEO: React.FC<Props> = ({ children }) => {
       <meta charSet="UTF-8" />
       <meta
         name="description"
-        content="Passionate frontend developer, accomplished in designing, building and maintaining performant web and mobile apps. High skilled in HTML, CSS, Javascript, Python and SQL alongside modern frameworks and libraries like React, React-Native, Vue and Django."
+        content="I build scalable and performant web and mobile apps with a focus on clean architecture, seamless user experience, and robust frontend engineering. Highly skilled in React, Nextjs, React Native, Typescript, Javascript, Python and SQL alongside other modern frameworks and libraries like Gatsby, Expo, Vue and Django."
+      />
+      <meta
+        name="keywords"
+        content="Front-End Developer, Senior Front-End Developer, React Developer, Senior Developer, Nextjs Developer, React Native Developer, Mobile App Developer, Responsive Web Design, Mobile App Development, UI/UX Implementation, Scalable Web Solutions, Hire Front-End Developer, Front-End Engineering, Contractor for Web Development."
       />
       <meta name="author" content="Abubakar Baiwa" />
       <meta name="language" content="english" />
@@ -20,7 +24,7 @@ const SEO: React.FC<Props> = ({ children }) => {
       <meta property="og:title" content="Abubakar Baiwa" />
       <meta
         property="og:description"
-        content="Passionate frontend developer, accomplished in designing, building and maintaining performant web and mobile apps. High skilled in HTML, CSS, Javascript, Python and SQL alongside modern frameworks and libraries like React, React-Native, Vue and Django."
+        content="I build scalable and performant web and mobile apps with a focus on clean architecture, seamless user experience, and robust frontend engineering. Highly skilled in React, Nextjs, React Native, Typescript, Javascript, Python and SQL alongside other modern frameworks and libraries like Gatsby, Expo, Vue and Django."
       />
       <meta property="og:url" content="https://irshadbaiwa.github.io/" />
       <meta property="og:type" content="website" />
