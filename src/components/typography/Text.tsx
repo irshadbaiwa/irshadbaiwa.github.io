@@ -7,7 +7,7 @@ interface Props {
 const Text: React.FC<Props> = ({ children }) => {
   // text-[#637381]
   return (
-    <p className="text-base md:text-lg text-gray-500 font-medium">{children}</p>
+    <p className="text-base md:text-lg text-gray-400 font-medium">{children}</p>
   )
 }
 
