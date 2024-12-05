@@ -30,7 +30,7 @@ const HeroSection: React.FC<Props> = () => {
         <div className="lg:col-span-2 lg:order-2 relative m-4 h-80 lg:h-auto grid place-items-center">
           <StaticImage
             src="../../../images/avatar1.jpg"
-            alt="My avatar"
+            alt="Abubakar Baiwa | Frontend developer"
             className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10 border-2 border-primary2/20"
           />
         </div>
