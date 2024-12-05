@@ -1,6 +1,11 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { IoLogoLinkedin, IoLogoGithub, IoLogoTwitter } from 'react-icons/io5'
+import {
+  IoLogoLinkedin,
+  IoLogoGithub,
+  IoLogoTwitter,
+  IoMail,
+} from 'react-icons/io5'
 
 import BlobGradient from '../../gradients/Blob'
 import Text from '../../typography/Text'
@@ -35,25 +40,36 @@ const HeroSection: React.FC<Props> = () => {
           <div className="py-4 screen-gutter text-center lg:text-left">
             {/* Intro */}
             <div className="mb-2">
-              <div className="mb-4">
+              <div className="mb-4 flex flex-col lg:gap-1 items-center lg:items-start">
                 <HeaderText variant="h1">
-                  <h1 className="my-2">Front-End Developer</h1>
+                  <h1>Abubakar Baiwa</h1>
+                </HeaderText>
+                <HeaderText variant="h4">
+                  <h2 className="text-gray-400">Sr. Frontend Developer</h2>
                 </HeaderText>
               </div>
               <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
                 <Text>
-                  Hi, I am Abubakar Baiwa. A passionate frontend developer,
-                  accomplished in designing, building and maintaining performant
-                  web and mobile apps.
+                  I build scalable and performant web and mobile apps with a
+                  focus on clean architecture, seamless user experience, and
+                  robust frontend engineering.
                 </Text>
               </div>
             </div>
             {/* Contact Links */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="my-4 gap-3 flex flex-wrap items-center justify-start">
-                <a target="_blank" href="mailto:irshaadbaiwa@gmail.com">
-                  <ButtonPrimary>Get in touch</ButtonPrimary>
-                </a>
+            <div className="w-full max-w-sm lg:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
+              <a
+                target="_blank"
+                className="w-full lg:w-auto"
+                href="mailto:irshaadbaiwa@gmail.com"
+              >
+                <ButtonPrimary className="w-full lg:w-auto">
+                  <IoMail size={28} className="mr-2" />
+                  <span>Get in touch</span>
+                </ButtonPrimary>
+              </a>
+              <hr className="h-[1px] w-4/5 lg:h-10 lg:w-[1px] bg-gray-200" />
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 <a
                   target="_blank"
                   className="text-primary1"
