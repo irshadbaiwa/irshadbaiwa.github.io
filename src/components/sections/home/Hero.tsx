@@ -13,6 +13,30 @@ import HeaderText from '../../typography/HeaderText'
 import ButtonPrimary from '../../buttons/ButtonPrimary'
 import ButtonLight from '../../buttons/ButtonLight'
 
+const primaryContactChannel = {
+  platform: 'Mail',
+  url: 'mailto:irshaadbaiwa@gmail.com',
+  icon: IoMail,
+  ctaText: 'Get in touch',
+}
+const socialLinks = [
+  {
+    platform: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/abubakar-baiwa-9328a81b0',
+    icon: IoLogoLinkedin,
+  },
+  {
+    platform: 'Github',
+    url: 'https://github.com/irshadbaiwa',
+    icon: IoLogoGithub,
+  },
+  {
+    platform: 'X / Twitter',
+    url: 'https://x.com/irshad_baiwa',
+    icon: IoLogoTwitter,
+  },
+]
+
 interface Props {}
 const HeroSection: React.FC<Props> = () => {
   return (
@@ -61,42 +85,27 @@ const HeroSection: React.FC<Props> = () => {
               <a
                 target="_blank"
                 className="w-full lg:w-auto"
-                href="mailto:irshaadbaiwa@gmail.com"
+                href={primaryContactChannel.url}
               >
                 <ButtonPrimary className="w-full lg:w-auto">
-                  <IoMail size={28} className="mr-2" />
-                  <span>Get in touch</span>
+                  <primaryContactChannel.icon size={28} className="mr-2" />
+                  <span>{primaryContactChannel.ctaText}</span>
                 </ButtonPrimary>
               </a>
               <hr className="h-[1px] w-4/5 lg:h-10 lg:w-[1px] bg-gray-200" />
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                <a
-                  target="_blank"
-                  className="text-primary1"
-                  href="https://www.linkedin.com/in/abubakar-baiwa-9328a81b0"
-                >
-                  <ButtonLight>
-                    <IoLogoLinkedin size={28} />
-                  </ButtonLight>
-                </a>
-                <a
-                  target="_blank"
-                  className="text-primary1"
-                  href="https://github.com/irshadbaiwa"
-                >
-                  <ButtonLight>
-                    <IoLogoGithub size={28} />
-                  </ButtonLight>
-                </a>
-                <a
-                  target="_blank"
-                  className="text-primary1"
-                  href="https://x.com/irshad_baiwa"
-                >
-                  <ButtonLight>
-                    <IoLogoTwitter size={28} />
-                  </ButtonLight>
-                </a>
+                {socialLinks.map((item) => (
+                  <a
+                    key={item.platform}
+                    target="_blank"
+                    className="text-primary1"
+                    href={item.url}
+                  >
+                    <ButtonLight>
+                      <item.icon size={28} />
+                    </ButtonLight>
+                  </a>
+                ))}
               </div>
             </div>
           </div>
