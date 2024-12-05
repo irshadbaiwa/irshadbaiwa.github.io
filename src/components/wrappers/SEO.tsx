@@ -31,6 +31,46 @@ const SEO: React.FC<Props> = ({ children }) => {
       <meta property="og:image" content="../../images/meta-image.png" />
       <meta property="twitter:image" content="../../images/meta-image.png" />
       <meta property="twitter:site" content="@irshad_baiwa" />
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Abubakar Irshad Baiwa',
+          jobTitle: 'Front-End Developer',
+          description:
+            'Front-End Developer specialed in building scalable and performant web and mobile apps with a focus on clean architecture, seamless user experience, and robust frontend engineering. Highly skilled in React, Nextjs, React Native, Typescript, Javascript, Python and SQL alongside other modern frameworks and libraries like Gatsby, Expo, Vue and Django.',
+          url: 'https://irshadbaiwa.github.io',
+          sameAs: [
+            'https://www.linkedin.com/in/abubakar-baiwa-9328a81b0',
+            'https://github.com/irshadbaiwa',
+            'https://x.com/irshad_baiwa',
+          ],
+          worksFor: {
+            '@type': 'Organization',
+            name: 'Independent Contractor / Freelancer',
+          },
+          knowsAbout: [
+            'React',
+            'Nextjs',
+            'React Native',
+            'Responsive Web Design',
+            'Expo',
+            'Mobile App Development',
+            'JavaScript',
+            'TypeScript',
+            'Python',
+            'Front-End Engineering',
+          ],
+          contactPoint: {
+            '@type': 'ContactPoint',
+            contactType: 'Business',
+            email: 'irshaadbaiwa@gmail.com',
+            url: 'https://irshadbaiwa.github.io',
+          },
+        })}
+      </script>
+
       {children}
     </>
   )
