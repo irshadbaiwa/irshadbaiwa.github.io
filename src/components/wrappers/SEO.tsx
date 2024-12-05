@@ -24,8 +24,8 @@ const SEO: React.FC<Props> = ({ children }) => {
       />
       <meta property="og:url" content="https://irshadbaiwa.github.io/" />
       <meta property="og:type" content="website" />
-      <meta property="og:image" content="../../images/avatar1.jpg" />
-      <meta property="twitter:image" content="../../images/avatar1.jpg" />
+      <meta property="og:image" content="../../images/meta-image.png" />
+      <meta property="twitter:image" content="../../images/meta-image.png" />
       <meta property="twitter:site" content="@irshad_baiwa" />
       {children}
     </>
