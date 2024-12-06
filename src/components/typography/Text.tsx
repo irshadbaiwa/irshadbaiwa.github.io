@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { ComponentProps } from 'react'
 
 interface Props {
   children: React.ReactNode
 }
 
-const Text: React.FC<Props> = ({ children }) => {
+const Text: React.FC<Props & ComponentProps<'p'>> = ({
+  children,
+  className,
+}) => {
   // text-[#637381]
-  return <p className="text-base md:text-lg text-gray-600 ">{children}</p>
+  return (
+    <p className={'text-base md:text-lg text-gray-600 ' + className}>
+      {children}
+    </p>
+  )
 }
 
 export default Text
