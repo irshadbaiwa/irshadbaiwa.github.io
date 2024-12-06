@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import {
   IoLogoLinkedin,
@@ -82,29 +83,29 @@ const HeroSection: React.FC<Props> = () => {
             </div>
             {/* Contact Links */}
             <div className="w-full max-w-sm lg:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
-              <a
+              <Link
                 target="_blank"
                 className="w-full lg:w-auto"
-                href={primaryContactChannel.url}
+                to={primaryContactChannel.url}
               >
                 <ButtonPrimary className="w-full lg:w-auto">
                   <primaryContactChannel.icon size={28} className="mr-2" />
                   <span>{primaryContactChannel.ctaText}</span>
                 </ButtonPrimary>
-              </a>
+              </Link>
               <hr className="h-[1px] w-4/5 lg:h-10 lg:w-[1px] bg-gray-200" />
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 {socialLinks.map((item) => (
-                  <a
+                  <Link
                     key={item.platform}
                     target="_blank"
                     className="text-primary1"
-                    href={item.url}
+                    to={item.url}
                   >
                     <ButtonLight>
                       <item.icon size={28} />
                     </ButtonLight>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
