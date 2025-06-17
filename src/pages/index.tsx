@@ -7,7 +7,6 @@ const HomePage: React.FC = () => {
   return (
     <main>
       <LandingPageHeroSection />
-      <div className="min-h-screen">Another section</div>
     </main>
   )
 }
