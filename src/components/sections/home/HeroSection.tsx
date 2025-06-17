@@ -56,7 +56,7 @@ export const LandingPageHeroSection = () => {
           <div className="mb-2">
             <div className="mb-4 flex flex-col lg:gap-1 items-center lg:items-start">
               <FadeIn delay={0.2} offset={4} withBlur>
-                <HeaderText variant="h2">
+                <HeaderText variant="h1">
                   <h1>
                     Hey, I'm Irshad. I build{' '}
                     <span className="text-gray-400">frontend interfaces.</span>
@@ -66,7 +66,7 @@ export const LandingPageHeroSection = () => {
             </div>
             <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
               <FadeIn delay={0.4} offset={4} withBlur>
-                <Text>
+                <Text className="!text-gray-400 font-medium">
                   A Frontend Engineer driven by passion for building intuitive,
                   scalable interfaces that deliver seamless experiences across
                   web and mobile platforms.
