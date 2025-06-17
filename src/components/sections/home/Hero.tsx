@@ -11,6 +11,7 @@ import {
 import BlobGradient from '../../gradients/Blob'
 import Text from '../../typography/Text'
 import HeaderText from '../../typography/HeaderText'
+import FadeIn from '../../transitions/FadeIn'
 import ButtonPrimary from '../../buttons/ButtonPrimary'
 import ButtonLight from '../../buttons/ButtonLight'
 
@@ -52,13 +53,19 @@ const HeroSection: React.FC<Props> = () => {
       {/* Hero Content */}
       <div className="lg:h-full lg:w-full lg:grid lg:grid-cols-5 relative lg:absolute z-10">
         {/* Avatar */}
-        <div className="lg:col-span-2 lg:order-2 relative m-4 h-80 lg:h-auto grid place-items-center">
+        <FadeIn
+          offset={0}
+          delay={0}
+          withBlur
+          animateOnce
+          className="lg:col-span-2 lg:order-2 relative m-4 h-80 lg:h-auto grid place-items-center"
+        >
           <StaticImage
-            src="../../../images/avatar1.jpg"
-            alt="Abubakar Baiwa | Frontend developer"
-            className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10 border-2 border-primary2/20"
+            src="../../../images/baiwa.jpg"
+            alt="Abubakar Baiwa | Frontend Engineer"
+            className="h-56 w-56 md:h-72 md:w-72 rounded-full z-10 shadow border-2 border-primary2/10"
           />
-        </div>
+        </FadeIn>
 
         {/* Welcome */}
         <div className="lg:col-span-3 lg:order-1 bg-gradient-to-b lg:bg-gradient-to-l from-transparent to-white grid place-items-center">
@@ -66,23 +73,33 @@ const HeroSection: React.FC<Props> = () => {
             {/* Intro */}
             <div className="mb-2">
               <div className="mb-4 flex flex-col lg:gap-1 items-center lg:items-start">
-                <HeaderText variant="h1">
-                  <h1>Abubakar Baiwa</h1>
-                </HeaderText>
-                <HeaderText variant="h4">
-                  <h2 className="text-gray-400">Sr. Frontend Developer</h2>
-                </HeaderText>
+                <FadeIn delay={0} offset={4} withBlur>
+                  <HeaderText variant="h1">
+                    <h1>Abubakar Baiwa</h1>
+                  </HeaderText>
+                </FadeIn>
+                <FadeIn delay={0.2} offset={2} withBlur>
+                  <HeaderText variant="h4">
+                    <h2 className="text-gray-400">Sr. Frontend Engineer</h2>
+                  </HeaderText>
+                </FadeIn>
               </div>
               <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
-                <Text>
-                  I build scalable and performant web and mobile apps with a
-                  focus on clean architecture, seamless user experience, and
-                  robust frontend engineering.
-                </Text>
+                <FadeIn delay={0.4} offset={4} withBlur>
+                  <Text>
+                    I'm Abubakar Irshad Baiwa. A Frontend Engineer driven by
+                    passion for building intuitive, scalable interfaces that
+                    deliver seamless experiences across web and mobile
+                    platforms.
+                  </Text>
+                </FadeIn>
               </div>
             </div>
             {/* Contact Links */}
-            <div className="w-full max-w-sm lg:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3">
+            <FadeIn
+              delay={0.4}
+              className="w-full max-w-sm lg:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3"
+            >
               <Link
                 target="_blank"
                 className="w-full lg:w-auto"
@@ -94,7 +111,11 @@ const HeroSection: React.FC<Props> = () => {
                 </ButtonPrimary>
               </Link>
               <hr className="h-[1px] w-4/5 lg:h-10 lg:w-[1px] bg-gray-200" />
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+              <FadeIn
+                from="left"
+                delay={1.0}
+                className="flex flex-wrap items-center justify-center lg:justify-start gap-3"
+              >
                 {socialLinks.map((item) => (
                   <Link
                     key={item.platform}
@@ -107,8 +128,8 @@ const HeroSection: React.FC<Props> = () => {
                     </ButtonLight>
                   </Link>
                 ))}
-              </div>
-            </div>
+              </FadeIn>
+            </FadeIn>
           </div>
         </div>
       </div>

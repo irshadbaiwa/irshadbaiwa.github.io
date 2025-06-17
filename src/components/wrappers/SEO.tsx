@@ -12,11 +12,11 @@ const SEO: React.FC<Props> = ({ children }) => {
       <meta charSet="UTF-8" />
       <meta
         name="description"
-        content="I build scalable and performant web and mobile apps with a focus on clean architecture, seamless user experience, and robust frontend engineering. Highly skilled in React, Nextjs, React Native, Typescript, Javascript, Python and SQL alongside other modern frameworks and libraries like Gatsby, Expo, Vue and Django."
+        content="I'm a Frontend Engineer driven by a passion for building intuitive, scalable interfaces that deliver seamless experiences across web and mobile platforms."
       />
       <meta
         name="keywords"
-        content="Front-End Developer, Senior Front-End Developer, React Developer, Senior Developer, Nextjs Developer, React Native Developer, Mobile App Developer, Responsive Web Design, Mobile App Development, UI/UX Implementation, Scalable Web Solutions, Hire Front-End Developer, Front-End Engineering, Contractor for Web Development."
+        content="Front-End Engineer, Front-End Developer, Senior Front-End Developer, React Developer, Senior Developer, Nextjs Developer, React Native Developer, Mobile App Developer, Responsive Web Design, Mobile App Development, UI/UX Implementation, Scalable Web Solutions, Hire Front-End Developer, Front-End Engineering, Contractor for Web Development."
       />
       <meta name="author" content="Abubakar Baiwa" />
       <meta name="language" content="english" />
@@ -37,9 +37,9 @@ const SEO: React.FC<Props> = ({ children }) => {
           '@context': 'https://schema.org',
           '@type': 'Person',
           name: 'Abubakar Irshad Baiwa',
-          jobTitle: 'Front-End Developer',
+          jobTitle: 'Front-End Engineer',
           description:
-            'Front-End Developer specialed in building scalable and performant web and mobile apps with a focus on clean architecture, seamless user experience, and robust frontend engineering. Highly skilled in React, Nextjs, React Native, Typescript, Javascript, Python and SQL alongside other modern frameworks and libraries like Gatsby, Expo, Vue and Django.',
+            "I'm a Frontend Engineer driven by a passion for building intuitive, scalable interfaces that deliver seamless experiences across web and mobile platforms.",
           url: 'https://irshadbaiwa.github.io',
           sameAs: [
             'https://www.linkedin.com/in/abubakar-baiwa-9328a81b0',
