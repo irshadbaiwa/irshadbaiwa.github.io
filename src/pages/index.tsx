@@ -1,12 +1,13 @@
 import React from 'react'
 import type { HeadFC } from 'gatsby'
 import SEO from '../components/wrappers/SEO'
-import HeroSection from '../components/sections/home/Hero'
+import { LandingPageHeroSection } from '../components/sections/home/HeroSection'
 
 const HomePage: React.FC = () => {
   return (
     <main>
-      <HeroSection />
+      <LandingPageHeroSection />
+      <div className="min-h-screen">Another section</div>
     </main>
   )
 }

@@ -73,24 +73,23 @@ const HeroSection: React.FC<Props> = () => {
             {/* Intro */}
             <div className="mb-2">
               <div className="mb-4 flex flex-col lg:gap-1 items-center lg:items-start">
-                <FadeIn delay={0} offset={4} withBlur>
-                  <HeaderText variant="h1">
-                    <h1>Abubakar Baiwa</h1>
-                  </HeaderText>
-                </FadeIn>
-                <FadeIn delay={0.2} offset={2} withBlur>
-                  <HeaderText variant="h4">
-                    <h2 className="text-gray-400">Sr. Frontend Engineer</h2>
+                <FadeIn delay={0.2} offset={4} withBlur>
+                  <HeaderText variant="h2">
+                    <h1>
+                      Hey, I'm Irshad. I build{' '}
+                      <span className="text-gray-400">
+                        frontend interfaces.
+                      </span>
+                    </h1>
                   </HeaderText>
                 </FadeIn>
               </div>
               <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
                 <FadeIn delay={0.4} offset={4} withBlur>
                   <Text>
-                    I'm Abubakar Irshad Baiwa. A Frontend Engineer driven by
-                    passion for building intuitive, scalable interfaces that
-                    deliver seamless experiences across web and mobile
-                    platforms.
+                    A Frontend Engineer driven by passion for building
+                    intuitive, scalable interfaces that deliver seamless
+                    experiences across web and mobile platforms.
                   </Text>
                 </FadeIn>
               </div>
