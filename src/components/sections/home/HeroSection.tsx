@@ -70,23 +70,23 @@ export const LandingPageHeroSection = () => {
           {/* Contact Links */}
           <FadeIn
             delay={0.4}
-            className="w-full max-w-sm sm:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
+            className="w-full max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-row flex-wrap items-center justify-center lg:justify-start gap-3"
           >
             <Link
               target="_blank"
-              className="w-full sm:w-auto"
+              className="w-auto"
               to={primaryContactChannel.url}
             >
-              <ButtonPrimary className="w-full sm:w-auto">
+              <ButtonPrimary className="w-auto">
                 <primaryContactChannel.icon size={28} className="mr-2" />
                 <span>{primaryContactChannel.ctaText}</span>
               </ButtonPrimary>
             </Link>
-            <hr className="h-[1px] w-4/5 sm:h-10 sm:w-[1px] bg-gray-200" />
+            {/* <hr className="h-10 w-[1px] bg-gray-200" /> */}
             <FadeIn
               from="left"
               delay={1.0}
-              className="flex flex-wrap items-center justify-center lg:justify-start gap-3"
+              className="flex flex-nowrap items-center justify-center lg:justify-start gap-3"
             >
               {socialLinks.map((item) => (
                 <Link
