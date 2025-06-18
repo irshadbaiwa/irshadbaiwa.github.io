@@ -45,7 +45,7 @@ export const LandingPageHeroSection = () => {
       id="home"
       className="min-h-screen pt-14 2xl:pt-16 flex flex-col lg:grid lg:grid-cols-12 screen-gutter relative overflow-hidden"
     >
-      <div className="lg:col-span-7 w-full max-w-3xl mx-auto lg:h-full lg:px-12 pt-12 pb-20 lg:py-8 flex flex-col gap-10 items-center lg:items-start justify-center text-center lg:text-left">
+      <div className="lg:col-span-7 w-full max-w-3xl mx-auto lg:h-full lg:px-12 pt-12 pb-12 lg:py-8 flex flex-col gap-10 items-center lg:items-start justify-center text-center lg:text-left">
         {/* Text */}
         <div className="py-4 screen-gutter text-center lg:text-left">
           {/* Intro */}

@@ -58,12 +58,15 @@ const stack = [
 
 export const SkillSection = () => {
   return (
-    <section id="skills" className="screen-gutter pt-4 lg:pt-12 pb-16 lg:pb-24">
+    <section
+      id="skills"
+      className="screen-gutter pt-12 lg:pt-12 pb-16 lg:pb-24"
+    >
       {/* Stack */}
-      <div className="max-w-5xl mx-auto bg-slate-100 rounded-2xl p-4 px-5 lg:px-6 space-y-6 overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-slate-50 rounded-2xl p-4 px-5 lg:px-6 space-y-6 overflow-hidden">
         <div>
           <HeaderText variant="h4">
-            <h3>Stack</h3>
+            <h2>Stack</h2>
           </HeaderText>
           <Text className="text-gray-500">
             Frameworks and libraries I use regularly.
