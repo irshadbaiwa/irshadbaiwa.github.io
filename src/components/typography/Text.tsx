@@ -3,12 +3,13 @@ import { cn } from '../../lib/utils'
 
 interface Props {
   children: React.ReactNode
-  variant?: 'base' | 'sm' | 'md' | 'lg'
+  variant?: 'base' | 'xs' | 'sm' | 'md' | 'lg'
 }
 
 const VARIANTS: any = {
-  base: 'text-base md:text-lg',
-  sm: 'text-sm md:text-base',
+  base: 'text-base',
+  xs: 'text-xs',
+  sm: 'text-sm',
   md: 'text-lg md:text-xl',
   lg: 'text-xl md:text-2xl',
 }

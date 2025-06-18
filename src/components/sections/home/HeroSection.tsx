@@ -8,12 +8,12 @@ import {
   IoMail,
 } from 'react-icons/io5'
 
-import BlobGradient from '../../gradients/Blob'
 import Text from '../../typography/Text'
 import HeaderText from '../../typography/HeaderText'
 import FadeIn from '../../transitions/FadeIn'
 import ButtonPrimary from '../../buttons/ButtonPrimary'
 import ButtonLight from '../../buttons/ButtonLight'
+import BlurEffect from '../../transitions/BlurEffect'
 
 const primaryContactChannel = {
   platform: 'Mail',
@@ -41,7 +41,7 @@ const socialLinks = [
 
 export const LandingPageHeroSection = () => {
   return (
-    <div className="min-h-screen pt-14 2xl:pt-16 flex flex-col lg:grid lg:grid-cols-12 screen-gutter relative">
+    <div className="min-h-screen pt-14 2xl:pt-16 mb-12 flex flex-col lg:grid lg:grid-cols-12 screen-gutter relative overflow-hidden">
       <div className="lg:col-span-7 w-full max-w-3xl mx-auto lg:h-full lg:px-12 pt-12 pb-20 lg:py-8 flex flex-col gap-10 items-center lg:items-start justify-center text-center lg:text-left">
         {/* Text */}
         <div className="py-4 screen-gutter text-center lg:text-left">
@@ -51,8 +51,10 @@ export const LandingPageHeroSection = () => {
               <FadeIn delay={0.2} offset={4} withBlur>
                 <HeaderText variant="h1">
                   <h1>
-                    Hey, I'm Irshad. I build{' '}
-                    <span className="text-gray-400">frontend interfaces.</span>
+                    Hey, I'm Irshad.{' '}
+                    <span className="text-gray-400">
+                      I build frontend interfaces.
+                    </span>
                   </h1>
                 </HeaderText>
               </FadeIn>
@@ -106,11 +108,9 @@ export const LandingPageHeroSection = () => {
       </div>
       <div className="lg:col-span-5 w-full lg:h-full relative grid place-items-center overflow-hidden">
         {/* Image */}
-        <FadeIn
-          offset={0}
-          delay={0}
-          withBlur
-          animateOnce
+        <BlurEffect
+          delay={0.4}
+          blurIntensity={32}
           className="lg:col-span-5 sm:max-w-sm lg:max-w-lg lg:h-full relative grid place-items-center overflow-hidden"
         >
           <StaticImage
@@ -118,7 +118,7 @@ export const LandingPageHeroSection = () => {
             alt="Abubakar Baiwa | Frontend Engineer"
             className="rounded-3xl"
           />
-        </FadeIn>
+        </BlurEffect>
       </div>
     </div>
   )

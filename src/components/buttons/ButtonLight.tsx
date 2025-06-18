@@ -13,7 +13,7 @@ const ButtonLight: React.FC<Props & ComponentProps<'button'>> = ({
   return (
     <button
       className={
-        'bg-violet-100 px-2 rounded-md h-10 flex items-center justify-center text-sm lg:text-base text-primary1 font-bold overflow-hidden ' +
+        'bg-slate-100 px-2 rounded-md h-10 flex items-center justify-center text-sm lg:text-base text-primary1 font-bold overflow-hidden ' +
         className
       }
       {...props}
