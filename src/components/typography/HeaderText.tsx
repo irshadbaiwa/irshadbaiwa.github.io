@@ -1,4 +1,5 @@
 import React from 'react'
+import { cn } from '../../lib/utils'
 
 interface Props {
   children: React.ReactNode
@@ -17,10 +18,10 @@ const TYPOGRAPHY: any = {
 const HeaderText: React.FC<Props> = ({ children, variant }) => {
   return (
     <div
-      className={
-        (TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1) +
-        ' font-bold text-gray-800 tracking-tight'
-      }
+      className={cn(
+        TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1,
+        'font-bold text-gray-800 tracking-tight leading-10'
+      )}
     >
       {children}
     </div>

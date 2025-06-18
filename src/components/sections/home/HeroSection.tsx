@@ -41,15 +41,8 @@ const socialLinks = [
 
 export const LandingPageHeroSection = () => {
   return (
-    <div className="min-h-screen pt-14 2xl:pt-16 flex flex-col lg:grid lg:grid-cols-12 px-4 md:px-8 lg:px-0 relative">
-      {/* Blurred Background Gradient */}
-      <div className="blur-3xl h-full w-full lg:grid lg:grid-cols-5 absolute top-0 lg:top-7 -z-10">
-        <div className="m-4 h-80 lg:h-auto lg:col-span-2 lg:col-start-4 grid place-items-center">
-          <BlobGradient />
-        </div>
-      </div>
-
-      <div className="lg:col-span-7 order-1 lg:-order-1 w-full max-w-3xl mx-auto lg:h-full lg:px-12 pt-12 pb-20 lg:py-8 flex flex-col gap-10 items-center lg:items-start justify-center text-center lg:text-left">
+    <div className="min-h-screen pt-14 2xl:pt-16 flex flex-col lg:grid lg:grid-cols-12 screen-gutter relative">
+      <div className="lg:col-span-7 w-full max-w-3xl mx-auto lg:h-full lg:px-12 pt-12 pb-20 lg:py-8 flex flex-col gap-10 items-center lg:items-start justify-center text-center lg:text-left">
         {/* Text */}
         <div className="py-4 screen-gutter text-center lg:text-left">
           {/* Intro */}
@@ -66,7 +59,7 @@ export const LandingPageHeroSection = () => {
             </div>
             <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
               <FadeIn delay={0.4} offset={4} withBlur>
-                <Text className="!text-gray-400 font-medium">
+                <Text variant="md" className="text-gray-500 font-medium">
                   A Frontend Engineer driven by passion for building intuitive,
                   scalable interfaces that deliver seamless experiences across
                   web and mobile platforms.
@@ -77,19 +70,19 @@ export const LandingPageHeroSection = () => {
           {/* Contact Links */}
           <FadeIn
             delay={0.4}
-            className="w-full max-w-sm lg:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-3"
+            className="w-full max-w-sm sm:max-w-full mx-auto lg:mx-0 mt-6 mb-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3"
           >
             <Link
               target="_blank"
-              className="w-full lg:w-auto"
+              className="w-full sm:w-auto"
               to={primaryContactChannel.url}
             >
-              <ButtonPrimary className="w-full lg:w-auto">
+              <ButtonPrimary className="w-full sm:w-auto">
                 <primaryContactChannel.icon size={28} className="mr-2" />
                 <span>{primaryContactChannel.ctaText}</span>
               </ButtonPrimary>
             </Link>
-            <hr className="h-[1px] w-4/5 lg:h-10 lg:w-[1px] bg-gray-200" />
+            <hr className="h-[1px] w-4/5 sm:h-10 sm:w-[1px] bg-gray-200" />
             <FadeIn
               from="left"
               delay={1.0}
@@ -111,20 +104,22 @@ export const LandingPageHeroSection = () => {
           </FadeIn>
         </div>
       </div>
-      <FadeIn
-        offset={0}
-        delay={0}
-        withBlur
-        animateOnce
-        className="lg:col-span-5 w-full lg:h-full relative grid place-items-center overflow-hidden"
-      >
+      <div className="lg:col-span-5 w-full lg:h-full relative grid place-items-center overflow-hidden">
         {/* Image */}
-        <StaticImage
-          src="../../../images/baiwa.jpg"
-          alt="Abubakar Baiwa | Frontend Engineer"
-          className="h-56 w-56 lg:h-72 lg:w-72 rounded-full z-10 shadow border-2 border-primary2/10"
-        />
-      </FadeIn>
+        <FadeIn
+          offset={0}
+          delay={0}
+          withBlur
+          animateOnce
+          className="lg:col-span-5 sm:max-w-sm lg:max-w-lg lg:h-full relative grid place-items-center overflow-hidden"
+        >
+          <StaticImage
+            src="../../../images/hero.jpg"
+            alt="Abubakar Baiwa | Frontend Engineer"
+            className="rounded-3xl"
+          />
+        </FadeIn>
+      </div>
     </div>
   )
 }
