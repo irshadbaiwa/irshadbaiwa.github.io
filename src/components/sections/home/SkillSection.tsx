@@ -60,7 +60,7 @@ export const SkillSection = () => {
   return (
     <section id="skills" className="screen-gutter pt-4 lg:pt-12 pb-16 lg:pb-24">
       {/* Stack */}
-      <div className="mt-8 max-w-5xl mx-auto bg-slate-100 rounded-2xl p-4 px-5 lg:px-6 space-y-5 overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-slate-100 rounded-2xl p-4 px-5 lg:px-6 space-y-6 overflow-hidden">
         <div>
           <HeaderText variant="h4">
             <h3>Stack</h3>
@@ -69,19 +69,19 @@ export const SkillSection = () => {
             Frameworks and libraries I use regularly.
           </Text>
         </div>
-        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4">
           {stack.map((stack) => (
             <div key={stack.tool} className="flex gap-2 items-center">
               <FadeIn
                 delay={0.2}
                 offset={5}
                 withBlur
-                className="shrink-0 w-12 md:w-14 lg:w-16 aspect-square p-2 rounded-xl relative grid place-items-center overflow-hidden"
+                className="shrink-0 w-12 md:w-14 lg:w-16 aspect-square p-2 relative grid place-items-center "
               >
                 <img
                   src={stack.icon}
                   alt={stack.tool}
-                  className="rounded-lg object-center object-contain h-full w-full"
+                  className="object-center object-contain h-full w-full"
                 />
               </FadeIn>
               <FadeIn delay={1} offset={5} from="left">
