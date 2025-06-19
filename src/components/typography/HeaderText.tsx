@@ -4,6 +4,7 @@ import { cn } from '../../lib/utils'
 interface Props {
   children: React.ReactNode
   variant: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  className?: React.ComponentProps<'div'>['className']
 }
 
 const TYPOGRAPHY: any = {
@@ -15,12 +16,13 @@ const TYPOGRAPHY: any = {
   h6: 'text-sm md:text-base',
 }
 
-const HeaderText: React.FC<Props> = ({ children, variant }) => {
+const HeaderText: React.FC<Props> = ({ children, variant, className }) => {
   return (
     <div
       className={cn(
         TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1,
-        'font-bold text-gray-800 tracking-tight'
+        'font-bold text-gray-800 tracking-tight',
+        className
       )}
     >
       {children}
