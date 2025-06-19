@@ -1,4 +1,5 @@
 import React, { ComponentProps } from 'react'
+import { cn } from '../../lib/utils'
 
 interface Props {
   children?: React.ReactNode
@@ -12,7 +13,11 @@ const ButtonPrimary: React.FC<Props & ComponentProps<'button'>> = ({
 }) => {
   return (
     <button
-      className={`bg-primary1 px-4 rounded-md h-10 flex items-center justify-center text-sm lg:text-base text-white font-bold overflow-hidden ${className}`}
+      className={cn(
+        `bg-primary1 px-4 rounded-md h-10 flex items-center justify-center text-sm lg:text-base text-white font-bold overflow-hidden`,
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary2 focus-visible:ring-offset-2',
+        className
+      )}
       {...props}
     >
       {children}

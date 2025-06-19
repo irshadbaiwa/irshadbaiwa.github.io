@@ -79,7 +79,7 @@ export const LandingPageHeroSection = () => {
           >
             <Link
               target="_blank"
-              className="w-auto"
+              className="w-auto focus-visible:outline-none"
               to={primaryContactChannel.url}
             >
               <ButtonPrimary className="w-auto">
@@ -97,7 +97,7 @@ export const LandingPageHeroSection = () => {
                 <Link
                   key={item.platform}
                   target="_blank"
-                  className="text-primary1"
+                  className="text-primary1 focus-visible:outline-none"
                   to={item.url}
                 >
                   <ButtonLight>

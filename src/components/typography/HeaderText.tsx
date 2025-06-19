@@ -20,7 +20,7 @@ const HeaderText: React.FC<Props> = ({ children, variant }) => {
     <div
       className={cn(
         TYPOGRAPHY[variant] ?? TYPOGRAPHY.h1,
-        'font-bold text-gray-800 tracking-tight leading-10'
+        'font-bold text-gray-800 tracking-tight'
       )}
     >
       {children}
