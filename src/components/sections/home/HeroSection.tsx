@@ -54,10 +54,8 @@ export const LandingPageHeroSection = () => {
               <FadeIn delay={0.2} offset={4} withBlur>
                 <HeaderText variant="h1">
                   <h1>
-                    Hey, I'm Irshad.{' '}
-                    <span className="text-gray-400">
-                      I build frontend interfaces.
-                    </span>
+                    Hey, I'm Irshad. I build{' '}
+                    <span className="text-gray-400">frontend interfaces.</span>
                   </h1>
                 </HeaderText>
               </FadeIn>
