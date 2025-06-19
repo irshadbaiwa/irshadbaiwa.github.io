@@ -109,7 +109,7 @@ export const LandingPageHeroSection = () => {
           </FadeIn>
         </div>
       </div>
-      <div className="lg:col-span-5 w-full lg:h-full relative grid place-items-center overflow-hidden">
+      <div className="lg:col-span-5 w-full lg:h-full relative grid place-items-center">
         {/* Image */}
         <BlurEffect
           delay={0.4}
