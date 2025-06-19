@@ -105,7 +105,7 @@ export const ProjectsSection = () => {
             {moreProjects.map((project) => (
               <ProjectCard {...project} key={project.title} />
             ))}
-            <div className="absolute bottom-0 left-0 z-10 bg-white w-full flex justify-center pt-8 pb-2 [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%)]">
+            <div className="lg:col-span-2 bg-white w-full flex justify-center pt-8 pb-2 [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%)]">
               <ButtonLight className="px-3" onClick={() => setShowMore(false)}>
                 Show less
                 <IoChevronDown
