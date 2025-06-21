@@ -5,7 +5,6 @@ import HeaderText from '../../typography/HeaderText'
 import ButtonLight from '../../buttons/ButtonLight'
 import { ProjectCard } from '../../blocks/ProjectCard'
 
-import ReactIcon from '../../../images/stack/react.png'
 import ScratchcodeLogo from '../../../images/projects/sc-logo.png'
 import ScratchcodeLMSPreview from '../../../images/projects/sc.png'
 import ScratchcodePlaygroundPreview from '../../../images/projects/sc-playground.png'
@@ -19,6 +18,13 @@ import EmbeeLogo from '../../../images/projects/embee-logo.png'
 import EmbeePreview from '../../../images/projects/embee.png'
 import WorkmaiteLogo from '../../../images/projects/workmaite-logo.png'
 import WorkmaitePreview from '../../../images/projects/workmaite.png'
+
+import FusionLogo from '../../../images/projects/fusion-logo.jpg'
+import FusionPreview from '../../../images/projects/fusion.png'
+import ABCLogo from '../../../images/projects/abc-logo.jpg'
+import ABCPreview from '../../../images/projects/abc.png'
+import ScanpayLogo from '../../../images/projects/scanpay-logo.png'
+import ScanpayPreview from '../../../images/projects/scanpay.png'
 
 const previewProjects: {
   title: string
@@ -50,11 +56,11 @@ const previewProjects: {
     isConfidential: true,
   },
   {
-    title: 'Talentsource',
-    description: 'Job-matching platform',
-    logo: TalentSourceLogo,
-    preview: TalentSourcePreview,
-    link: 'https://talentsource.vercel.app',
+    title: 'Scan Pay',
+    description: 'Qr-code-based payment app poc',
+    logo: ScanpayLogo,
+    preview: ScanpayPreview,
+    link: 'https://github.com/irshadbaiwa/scanpay',
   },
 ]
 
@@ -73,6 +79,13 @@ const moreProjects: {
     preview: WorkmaitePreview,
   },
   {
+    title: 'Talentsource',
+    description: 'Job-matching platform',
+    logo: TalentSourceLogo,
+    preview: TalentSourcePreview,
+    link: 'https://talentsource.vercel.app',
+  },
+  {
     title: 'Widoph Remit',
     description: 'Cross-border multi-currency transactions',
     logo: WidophRemitLogo,
@@ -83,6 +96,20 @@ const moreProjects: {
     description: 'Real-estate company website',
     logo: EmbeeLogo,
     preview: EmbeePreview,
+  },
+  {
+    title: 'ABC Express',
+    description: 'Logistics mobile app',
+    logo: ABCLogo,
+    preview: ABCPreview,
+    link: 'https://play.google.com/store/apps/details?id=com.fusion.abccargoxpress',
+  },
+  {
+    title: 'Fusion One',
+    description: 'Fusion community app',
+    logo: FusionLogo,
+    preview: FusionPreview,
+    link: 'https://play.google.com/store/apps/details?id=com.cone.fusion',
   },
 ]
 

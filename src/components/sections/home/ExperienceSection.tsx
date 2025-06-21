@@ -26,7 +26,7 @@ const ExperienceDetails = ({
       <ul className="space-y-2">
         {responsibilities.map((item) => (
           <li key={item}>
-            <Text variant="base" className="text-gray-400">
+            <Text variant="base" className="text-gray-500 font-normal">
               {item}
             </Text>
           </li>
