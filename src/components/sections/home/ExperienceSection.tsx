@@ -5,7 +5,7 @@ import Text from '../../typography/Text'
 
 import ScratchcodeLogo from '../../../images/projects/sc-logo.png'
 import BellvivLogo from '../../../images/projects/bellviv-logo.png'
-import WorkmaiteLogo from '../../../images/projects/workmaite-logo.png'
+import WorkmaiteLogo from '../../../images/projects/workmaite-logo.svg'
 import FITLogo from '../../../images/projects/fit-logo.webp'
 import MyLogo from '../../../images/icon.svg'
 import HeaderText from '../../typography/HeaderText'

@@ -16,7 +16,7 @@ import KoaLogo from '../../../images/projects/koa-logo.png'
 import KoaPreview from '../../../images/projects/koa.png'
 import EmbeeLogo from '../../../images/projects/embee-logo.png'
 import EmbeePreview from '../../../images/projects/embee.png'
-import WorkmaiteLogo from '../../../images/projects/workmaite-logo.png'
+import WorkmaiteLogo from '../../../images/projects/workmaite-logo.svg'
 import WorkmaitePreview from '../../../images/projects/workmaite.png'
 
 import FusionLogo from '../../../images/projects/fusion-logo.jpg'
@@ -77,6 +77,7 @@ const moreProjects: {
     description: 'Project management tool',
     logo: WorkmaiteLogo,
     preview: WorkmaitePreview,
+    link: 'https://workmaite.io/',
   },
   {
     title: 'Talentsource',

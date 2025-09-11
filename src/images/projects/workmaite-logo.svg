@@ -1,0 +1,11 @@
+<svg width="240" height="70" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: 'Arial', sans-serif; font-size: 40px; fill: #4B0082; font-weight: bold; }
+    .symbol { fill: #4B0082; }
+  </style>
+  <text x="58.5%" y="70%" dominant-baseline="middle" text-anchor="middle" class="text">workmaite</text>
+  <circle cx="30" cy="20" r="20" fill="#4B0082"/>
+  <line x1="30" y1="20" x2="70" y2="20" stroke="#4B0082" stroke-width="2"/>
+  <circle cx="70" cy="20" r="10" fill="#4B0082"/>
+</svg>
+
