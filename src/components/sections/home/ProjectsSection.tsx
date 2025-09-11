@@ -35,18 +35,18 @@ const previewProjects: {
   isConfidential?: boolean
 }[] = [
   {
+    title: 'Workmate',
+    description: 'Project management tool',
+    logo: WorkmaiteLogo,
+    preview: WorkmaitePreview,
+    link: 'https://workmaite.io/',
+  },
+  {
     title: 'Scratchcode Academy',
     description: 'Learning platform',
     logo: ScratchcodeLogo,
     preview: ScratchcodeLMSPreview,
     link: 'https://scratchcode.org',
-  },
-  {
-    title: 'Scratchcode Playground',
-    description: 'Online IDE',
-    logo: ScratchcodeLogo,
-    preview: ScratchcodePlaygroundPreview,
-    link: 'https://playground.scratchcode.org',
   },
   {
     title: 'Koa dashboard',
@@ -73,11 +73,11 @@ const moreProjects: {
   isConfidential?: boolean
 }[] = [
   {
-    title: 'Workmate',
-    description: 'Project management tool',
-    logo: WorkmaiteLogo,
-    preview: WorkmaitePreview,
-    link: 'https://workmaite.io/',
+    title: 'Scratchcode Playground',
+    description: 'Online IDE',
+    logo: ScratchcodeLogo,
+    preview: ScratchcodePlaygroundPreview,
+    link: 'https://playground.scratchcode.org',
   },
   {
     title: 'Talentsource',
