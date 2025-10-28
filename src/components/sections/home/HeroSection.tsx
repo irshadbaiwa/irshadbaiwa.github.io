@@ -51,23 +51,23 @@ export const LandingPageHeroSection = () => {
           {/* Intro */}
           <div className="mb-2">
             <div className="mb-4 flex flex-col lg:gap-1 items-center lg:items-start">
-              <FadeIn delay={0.2} offset={4} withBlur>
+              <div>
                 <HeaderText variant="h1">
                   <h1>
                     Hey, I'm Irshad. I build{' '}
                     <span className="text-gray-400">frontend interfaces.</span>
                   </h1>
                 </HeaderText>
-              </FadeIn>
+              </div>
             </div>
             <div className="max-w-xl flex flex-col gap-1 items-center lg:items-start justify-center">
-              <FadeIn delay={0.4} offset={4} withBlur>
+              <div>
                 <Text variant="md" className="text-gray-500 font-medium">
                   A Frontend Engineer driven by passion for building intuitive,
                   scalable interfaces that deliver seamless experiences across
                   web and mobile platforms.
                 </Text>
-              </FadeIn>
+              </div>
             </div>
           </div>
           {/* Contact Links */}
