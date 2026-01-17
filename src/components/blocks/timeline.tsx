@@ -52,22 +52,19 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className="flex justify-start pt-14 md:pt-40 md:gap-10"
           >
             <div className="flex flex-col md:flex-row z-40 items-center self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-16 w-16 absolute left-0 md:left-0 rounded-full bg-white flex items-center justify-center">
                 <div className="h-12 w-12 rounded-full bg-slate-100 border border-slate-300 p-2 flex items-center justify-center">
-                  <IoBriefcase className="text-gray-300" size={20} />
-                </div>
-              </div>
-              <div className="shrink-0 hidden md:flex gap-4 items-start md:pl-20">
-                <div className="w-8 md:w-10 lg:w-12 aspect-square relative">
                   <img
                     src={item.logo}
                     alt={item.title}
-                    className="object-center object-contain h-full w-full"
+                    className="object-center object-contain h-full w-auto mx-auto max-w-full"
                   />
                 </div>
+              </div>
+              <div className="shrink-0 hidden relative top-2 md:flex gap-4 items-start md:pl-20">
                 <div>
                   <HeaderText variant="h3">
                     <h3>{item.title}</h3>
@@ -87,14 +84,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <div className="md:hidden flex gap-4 items-start mb-4">
-                <div className="shrink-0 w-8 aspect-square relative">
-                  <img
-                    src={item.logo}
-                    alt={item.title}
-                    className="object-center object-contain h-full w-full"
-                  />
-                </div>
+              <div className="md:hidden relative top-2 flex flex-col gap-2 items-start mb-4">
                 <div>
                   <HeaderText variant="h3">
                     <h3 className="text-left">{item.title}</h3>
