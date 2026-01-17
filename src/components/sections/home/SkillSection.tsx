@@ -7,6 +7,7 @@ import FadeIn from '../../transitions/FadeIn'
 import ReactIcon from '../../../images/stack/react.png'
 import NextjsIcon from '../../../images/stack/nextjs.png'
 import TSIcon from '../../../images/stack/ts.png'
+import VueIcon from '../../../images/stack/vue.png'
 import TailwindIcon from '../../../images/stack/tailwind.png'
 import ReactQueryIcon from '../../../images/stack/react-query.png'
 import MotionIcon from '../../../images/stack/framer-motion.png'
@@ -27,6 +28,11 @@ const stack = [
   {
     tool: 'Typescript',
     icon: TSIcon,
+    experience: '4+ years',
+  },
+  {
+    tool: 'Vue.js',
+    icon: VueIcon,
     experience: '4+ years',
   },
   {
