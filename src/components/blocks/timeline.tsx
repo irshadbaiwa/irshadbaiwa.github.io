@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useScroll, useTransform, motion } from 'motion/react'
-import { IoLocationSharp, IoBriefcase } from 'react-icons/io5'
+import { IoLocationSharp } from 'react-icons/io5'
 
 import HeaderText from '../typography/HeaderText'
 import Text from '../typography/Text'
